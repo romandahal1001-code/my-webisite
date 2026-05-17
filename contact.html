@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
     <title>Contact Page</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
 
-    <h1>Contact Page</h1>
+    <button id="theme-toggle">🌙</button>
+
+    <div class="logo-container">
+        <img src="logo.png" class="logo">
+    </div>
 
     <nav>
         <a href="index.html">Home</a>
@@ -15,7 +26,59 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <p>Email: student@email.com</p>
+    <div class="hero">
+
+        <div class="card">
+
+            <h1>Contact Me</h1>
+
+            <form class="contact-form">
+
+                <input type="text" placeholder="Enter Your Name">
+
+                <input type="email" placeholder="Enter Your Email">
+
+                <textarea rows="5"
+                placeholder="Enter Your Message"></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+            <div class="contact-info">
+
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    romandahal1001@gmail.com
+                </p>
+
+                <p>
+                    <i class="fas fa-phone"></i>
+                    01025681099
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Roman Dahal
+    </footer>
+
+    <script>
+
+        const toggle = document.getElementById("theme-toggle");
+
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("light-mode");
+        });
+
+    </script>
 
 </body>
+
 </html>
